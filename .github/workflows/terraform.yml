@@ -35,7 +35,7 @@ jobs:
 
       - name: Terraform Init
         id: init
-        run: terraform init -backend-config="bucket=${{ secrets.BUCKET_TF_CAP }}"
+        run: terraform init -backend-config="bucket=$secrets.BUCKET_TF_CAP"
 
       - name: Terraform Format
         id: fmt
